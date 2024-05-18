@@ -17,3 +17,27 @@ function processArray(arr) {
 }
 
 
+
+// Function to format strings based on corresponding numbers
+function formatArrayStrings(strings, numbers) {
+
+    let formattedStrings = [];
+
+    for (let i = 0; i < strings.length; i++) {
+
+        let currentString = strings[i];
+        let currentNumber = numbers[i];
+
+        if (currentNumber % 2 === 0) {
+
+            formattedStrings.push(currentString.toUpperCase());
+        } else {
+
+            formattedStrings.push(currentString.toLowerCase());
+        }
+    }
+    return formattedStrings;
+}
+
+
+
